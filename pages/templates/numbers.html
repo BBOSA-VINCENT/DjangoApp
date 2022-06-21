@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers</title>
+</head>
+<body>
+    <img src="/secrets of Dumbledore.jpg" alt="logo" width="200px" height="200px">  
+    <h2>Coffee Junkie</h2>
+
+    {%include 'navbar.html'%}
+    
+    <img src="./coffeebeans.jpg" alt="coffee beans" width="100%">
+    <h1>Our Store</h1>
+    <table style="border: 2px solid black;">
+        <tr>
+            <th>City</th>
+            <th>Chicago</th>
+            <th>New York</th>
+            <th>Los Angeles</th>
+        </tr>
+        <tr>
+            <td>orders</td>
+            <td>125</td>
+            <td>250</td>
+            <td>500</td>
+
+        </tr>
+         <tr>
+            <td>profit</td>
+            <td>$ 10,000</td>
+            <td>$ 20,000</td>
+            <td>$ 30,000</td>
+        </tr> 
+    </table>
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    copyright &copy; 2019
+    <br>
+    <br>
+    <a href="#top">BACK TO THE TOP</a>
+    {% for room in rooms%}
+        <div>
+            {{ room.id }}--{{ room.name }}
+        </div>
+    {%endfor%}
+</body>
+</html>
